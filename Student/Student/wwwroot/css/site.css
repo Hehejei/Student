@@ -1,0 +1,56 @@
+﻿
+.letter1 {
+    color: white;
+    font-size: 100%;
+}
+.main {
+    margin: 0 auto;
+    min-width: 30%;
+    max-width: 85%;
+    height: 1200px;
+    background-color: black;
+    opacity: 0.9;
+    border-radius: 3%;
+}
+
+.button {
+    border-radius: 0.5em;
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    user-select: none;
+    background: darkred;
+    padding: .7em 1.5em;
+    outline: none;
+}
+a.button:hover {
+    background: rgb(232,95,76);
+}
+
+a.button:active {
+    background: rgb(152,15,0);
+} 
+table {
+    border-collapse: collapse;
+}
+
+    table th,
+    table td {
+        padding: 0 5em;
+        color: white;
+    }
+
+    table.std {
+        width: 100%;
+        border: 0px;
+        border-collapse: collapse;
+    }
+
+        table.std thead {
+            font-weight: bold;
+        }
+
+        table.std td {
+            padding: 0.6rem 1rem;
+        }
+

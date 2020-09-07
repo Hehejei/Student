@@ -1,0 +1,50 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "StudentAdd";
+}
+    <div class="main">
+        <center>
+            <div>
+                <form asp-controller="Home" asp-action="StudentEditt" method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <div asp-validation-summary="All"></div>
+                    <div>
+                        <div class="letter1"><label asp-for="Gender"> Пол</label></div>
+                        <input asp-for="Gender" />
+                        <span asp-validation-for="Gender"></span>
+                    </div>
+
+                    <div>
+                        <div class="letter1"><label asp-for="Surname"> Фамилия </label></div>
+                        <input asp-for="Surname" />
+                        <span asp-validation-for="Surname"></span>
+                    </div>
+
+                    <div>
+                        <div class="letter1"><label asp-for="Name"> Имя </label></div>
+                        <input asp-for="Name" />
+                        <span asp-validation-for="Name"></span>
+                    </div>
+
+                    <div>
+                        <div class="letter1"><label asp-for="MiddleName"> Отчество</label></div>
+                        <input asp-for="MiddleName" />
+                        <span asp-validation-for="MiddleName"></span>
+                    </div>
+
+                    <div>
+                        <div class="letter1"><label asp-for="Nick"> Позывной </label></div>
+                        <input asp-for="Nick" />
+                        <span asp-validation-for="Nick"></span>
+                    </div>
+
+                    <input type="submit" value="Добавить">
+
+
+
+                </form>
+
+
+            </div>
+        </center>
+    </div>

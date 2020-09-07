@@ -1,0 +1,22 @@
+﻿@using Student.Models
+@model IQueryable<Student>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="main">
+        <center>
+            <p><a asp-controller="Home" asp-action="StudentAdd" class="button">Добавить студента</a></p>
+            <p><div class="letter1"> Список студентов</div></p>
+            <table class="std">
+
+                <tr><td>Пол</td><td>Фамилия</td><td>Имя</td><td>Отчество</td><td>Позывной</td></tr>
+                @foreach (Student entity in Model)
+                {
+                    <tr><td>@entity.Gender</td><td><a asp-controller="Home" asp-action="StudentEdit" asp-route-id="@entity.Id"> @entity.Name</a> </td><td>@entity.Name</td><td>@entity.MiddleName</td><td>@entity.Nick</td></tr>
+                }
+            </table>
+
+        </center>
+    </div>
+
