@@ -21,9 +21,9 @@ namespace Student.Controllers
             return entity.Id;
         }
 
-        public void RemoveStudent(Models.Student entity)
+        public void RemoveStudent(Models.Student en)
         {
-            ctx.studentss.Remove(entity);
+            ctx.studentss.Remove(en);
             ctx.SaveChanges();
         }
 
